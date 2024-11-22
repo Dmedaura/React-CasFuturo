@@ -1,19 +1,25 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-import Pagina1 from '../components/Screens/Pagina1'
-import Pagina2 from '../components/Screens/Pagina2'
+import Pagina1 from '../components/Screens/PersonajesPage'
+import Pagina2 from '../components/Screens/ArmasPage'
 import Navbar from '../components/Navbar'
+import HomePage from '../components/Screens/HomePage'
+import MapasPage from '../components/Screens/MapasPage'
+import Footer from '../components/Footer'
+import PersonajesPage from '../components/Screens/PersonajesPage'
+import ArmasPage from '../components/Screens/ArmasPage'
 
 const AppRouter = () => {
   return (
     <>
-    <Navbar/>
-    <Routes>
-        <Route element={<Pagina1 />} path='/' />
-        <Route element={<Pagina2 />} path='/mapas' />
-        <Route element={<Pagina2 />} path='/modalidadesdejuego' />
-        <Route element={<Pagina2 />} path='/armas' />
-    </Routes>
+      <Navbar />
+      <Routes>
+        <Route element={<HomePage />} path='/' />
+        <Route element={<MapasPage />} path='/mapas' />
+        <Route element={<PersonajesPage />} path='/personajes' />
+        <Route element={<ArmasPage />} path='/armas' />
+      </Routes>
+      <Footer/>
 
     </>
   )

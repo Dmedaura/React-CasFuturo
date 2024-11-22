@@ -12,14 +12,6 @@ const App = () => {
       <BrowserRouter>
         <AppRouter />
       </BrowserRouter>
-
-      
-      {/* <Navbar />
-      <div className="pt-[112px]">
-        <HeroSection />
-        <LandingPage />
-        <Footer />
-      </div> */}
     </>
   );
 };
