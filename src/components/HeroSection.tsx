@@ -3,7 +3,7 @@ import React from 'react'
 const HeroSection = () => {
   return (
     <div
-  className="hero min-h-screen bg-fixed"
+  className="hero min-h-screen bg-fixed "
   style={{
     backgroundImage: "url(https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/6c8f1dd2aa910398a6140967b0ef88ffc02cca2e-1920x1080.jpg)",
   }}>
